@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>数钱游戏</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body>
+		<audio src="audio/bgmusic.mp3" autoplay="autoplay" loop="loop"></audio>
+		<div class="page1">
+			<img src="img/tiaozhan.png" alt="" class="challenge animated zoomIn" />
+			<img src="img/yingqu.png" alt="" class="yingqu  animated swing" />
+			<img src="img/start_game.png" alt="" class="start" />
+			<img src="img/shou.png" alt="" class="hand" />
+			<div class="but">
+				<img src="img/ranking.png" alt="" class="rank" />
+				<img src="img/activity_rule.png" alt="" class="rule" />
+				<img src="img/prize.png" alt="" class="prize" />
+				<img src="img/shiyong.png" alt="" class="dir" />
+			</div>
+
+			<div class="rankT">
+				<img src="img/ranking_bg.png" alt="" class="rankT1" />
+				<img src="img/close.png" alt="" class="close" />
+			</div>
+			<div class="ruleT">
+				<div class="rule1">
+					<h1>活动规则</h1>
+					<p>1、每人有多次游戏机会，但成绩只能提交一次，且提交之后不能更改！<br /> 2、提交成绩时要提供姓名及手机号码作为兑换凭证，因用户本人未在规定时间内提供正确的手机号码造成的奖品损失，由用户承担。<br /> 3、活动时间为2016年5月11日-5月19日24:00，活动结束后将在“雾灵山庄”微信公布中奖名单。 4、获奖规则：系统将根据大家提交的成绩，按照由多到少的规则进行排行，排名第1的网友将获得一等奖，排名第2-第21位的网友将分获二等奖，以此类推。<br /> 5、奖品的发放：活动结束后，将由工作人员与您取得联系，并将相应的卡券编号发送到您提供的手机号码上。
+					</p>
+				</div>
+				<img src="img/close.png" alt="" class="close" />
+			</div>
+			<div class="prizeT">
+				<div class="prize1">
+					<h1>活动奖品</h1>
+					<p>一等奖1人：价值1488元7号楼1晚豪华标间免费房券1张，并可享康体项目3折优惠；<br /> 二等奖20人：100元订房代金券每人1张，并可享康体项目4折优惠；
+						<br /> 三等奖50人：50元订房代金券每人1张，并可享康体项目5折优惠。
+						<br /> 奖品的有效期：2016年5月20日至6月15日（周五、周六及法定节假日不可用）
+					</p>
+				</div>
+				<img src="img/close.png" alt="" class="close" />
+			</div>
+			<div class="dirT">
+				<div class="dir1">
+					<h1>奖券使用说明</h1>
+					<p>1、奖品的使用：请务必至少提前一周致电010-81027788或81027799进行预约，并于入住时向前台服务人员出示您手机上收到的卡券编号即可使用（需同时验证获奖人姓名与手机号码）。<br /> 2、代金券仅适用于线下门市价入住客房消费使用，不适用于通过携程或微信等其他线上渠道预定使用。
+						<br /> 3、免费房安排的房间将视当时酒店排房情况而定，如您所预约的时段预订已满，将与您协商调整入住时间。
+						<br /> 4、免费房券及代金券不得用于除订房外其他产品消费，不得与酒店其他优惠折扣或礼券同时使用，且不予退换、兑换现金或找赎。
+						<br /> 5、对于恶意刷奖者和作弊者，主办方有权取消其兑奖资格。
+					</p>
+				</div>
+				<img src="img/close.png" alt="" class="close" />
+			</div>
+			<div class="info">
+				<form action="">
+					<input type="" name="" id="" value="" placeholder="姓名" class="inp1" />
+					<input type="" name="" id="" value="" placeholder="电话" class="inp2" />
+					<img src="img/p1_sub.png" alt="" class="sub" />
+				</form>
+				<img src="img/close.png" alt="" class="close" />
+			</div>
+		</div>
+		<div class="page2">
+			<div class="kuang">
+				<div class="txt"></div>
+			</div>
+			<ul class="score">
+				<li class="list1">0</li>
+				<li class="list2">0</li>
+				<li class="list3">0</li>
+				<li class="list4">10</li>
+			</ul>
+			<img src="img/p2_shou.png" alt="" class="hand2 animated infinite fadeOutUp" />
+			<img src="img/p2_qian.jpg" alt="" class="qian" />
+			<img src="img/p2_zhuan.png" alt="" class="zhuan" />
+		</div>
+		<div class="page3">
+			<img src="img/p3_acquire.png" alt="" class="p3_acquire" />
+			<div class="result">你太厉害了，快要强到没有对手了</div>
+			<div class="now_score">￥33</div>
+			<div class="result_score">玩家最高战绩：￥<span id="high">xxx</span>当前排名<span id="current">xx</span></div>
+			<img src="img/p3_again.png" alt="" class="again" />
+			<img src="img/p3_share_btn.png" alt="" class="share" />
+			<div class="but">
+				<img src="img/ranking.png" alt="" class="rank" />
+				<img src="img/activity_rule.png" alt="" class="rule" />
+				<img src="img/prize.png" alt="" class="prize" />
+				<img src="img/shiyong.png" alt="" class="dir" />
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-2.1.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/touch.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("html").css({
+			"font-size": (window.innerWidth / 16) + 'px'
+				//rem=实际/40;
+		})
+		$(".page1,.page2,.page3")[0].style.width = document.documentElement.clientWidth + "px";
+		$(".page1")[0].style.height = document.documentElement.clientHeight + "px";
+		$(".page2")[0].style.height = document.documentElement.clientHeight + "px";
+		$(".page3")[0].style.height = document.documentElement.clientHeight + "px";
+		$(".but").click(function(e) {
+			var e = event || window.event;
+			var target = e.target || e.srcElement;
+			//			console.log(target.className);
+			if(target.nodeName == "IMG") {
+				//				console.log("1");
+				switch(target.className) {
+					case "rank":
+						$(".rankT").show();
+						break;
+					case "rule":
+						$(".ruleT").show();
+						break;
+					case "prize":
+						$(".prizeT").show();
+						break;
+					case "dir":
+						$(".dirT").show();
+						break;
+					default:
+						break;
+				}
+			}
+		})
+		$(".close").click(function() {
+			$(".close").parent().hide()
+		})
+		$(".start").click(function() {
+			$(".info").show();
+		})
+		
+		$(".sub").click(function() {
+			if(checkUserName($(".inp1").val())&&checkTelephone($(".inp2").val())){
+			$(".page1").hide();
+			$(".page2").show();
+			}else{
+				alert("请填写正确的信息")
+			}
+			
+		})
+		var timer = null;
+		//记录成绩的变量
+		var num = 0;
+		//倒计时的变量
+		var countNumber = 10
+			//开始倒计时的变量，开始数钱的时候（向上扫动的时候，变为true）
+		var beginCount = false;
+		touch.on(".qian", "touchstart", function(e) {
+			e.preventDefault();
+		})
+		touch.on(".qian", "swipeup", function(e) {
+			var moved_money = document.createElement("img");
+			moved_money.src = "img/p2_qian.jpg";
+			moved_money.className = "qian money1";
+			$(".page2")[0].appendChild(moved_money);
+			var timer = setTimeout(function() {
+				$(".page2")[0].removeChild(moved_money);
+			}, 1000);
+			beginCount = true;
+			//成绩增1，并提取出3位数字
+			num++;
+			var numStr = (num / 100).toString();
+			var num1 = numStr.substr(0, 1);
+			var num2 = numStr.substr(2, 1);
+			var num3 = numStr.substr(3, 1);
+			if(!num3) {
+				num3 = 0;
+			}
+			if(!num2) {
+				num2 = 0
+			}
+			$(".list1")[0].innerHTML = num1;
+			$(".list2")[0].innerHTML = num2;
+			$(".list3")[0].innerHTML = num3;
+		})
+
+		timer = setInterval(function() {
+			if(beginCount) {
+				if(countNumber > 0) {
+					countNumber--;
+					$(".list4")[0].innerHTML = countNumber;
+				} else {
+					clearInterval(timer);
+					timer = null;
+					$(".list4")[0].innerHTML = 0;
+					$(".page2").hide();
+					$(".page3").show();
+//					$("#current")[0].innerHTML = "￥"+cRecult;
+					$(".now_score")[0].innerHTML = "￥" + num;
+				}
+			}
+
+		}, 1000)
+
+		$(".again").click(function() {
+			window.location.reload();
+		})
+		//表单正则验证
+		function checkUserName(username){
+			if(username.length<5||username>16){
+				alert("用户名长度不对，应该在5到16个字符。");
+				return false;
+			}else{
+				var regStr=/^[a-zA-Z]\w+$/;
+				var reg=new RegExp(regStr);
+				if(reg.test(username)){
+					return true;
+				}else{
+					alert("用户名不规范，应包括数字、字母、下划线，以字母开头。");
+					return false;
+				}
+			}
+		}
+		function checkTelephone(tel){
+			var regStr=/^1[3578][0-9]{9}$/;
+			var reg=new RegExp(regStr);
+			if(reg.test(tel)){
+				return true;
+			}else{
+				alert("手机号不正确，请输入正确的手机号");
+				return false;
+			}
+		}
+	</script>
+
+</html>
